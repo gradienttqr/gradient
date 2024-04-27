@@ -1,7 +1,11 @@
 import './header-styles.css'
 import logo from'../../logo.svg'
-// import {useState} from 'react';
+import {useState} from 'react';
 export default () => {
+    const [now, setNow] = useState(new Date());
+    setInterval(() => setNow(new Date()), 1000);
+ 
+ 
   return (
   <header>
         <img src={logo} alt='logo'></img>
