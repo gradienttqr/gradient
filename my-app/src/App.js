@@ -3,7 +3,6 @@
 import Header from './components/header/header.js';
 import MainList from './components/header/main/main.js';
 import { dataForList, dataForButtons } from './content/mainData.js';
-import { dataForButtons, dataForList } from './content/mainData.js';
 import Button from  './components/button/button.js';
 import './components/header/main/main.css';
 import { useState } from 'react';
@@ -14,7 +13,7 @@ function App() {
   //let contentFromButton = 'About us';
   const handleClick = (prop) => {
     console.log(prop);
-    setNewContent = prop;
+    setNewContent(prop);
   } 
   return (
     <div className="App">
@@ -31,11 +30,11 @@ function App() {
      <body> 
     </body>
         <h1> All buttons </h1>
-        <Button onClick = {() => handleClick('prop1')}>Item 1</Button>
-        <Button>onClick = {() => handleClick('prop2')}>Item 2</Button>
-        <Button>onClick = {() => handleClick('prop3')}>Item 3</Button>
-        <Button>onClick = {() => handleClick('prop4')}>Item 4</Button>
-        <Button>onClick = {() => handleClick('prop5')}>Item 5</Button>
+        <Button onClick={() => handleClick('prop1')}>Item 1</Button>
+        <Button onClick={() => handleClick('prop2')}>Item 2</Button>
+        <Button onClick={() => handleClick('prop3')}>Item 3</Button>
+        <Button onClick={() => handleClick('prop4')}>Item 4</Button>
+        <Button onClick={() => handleClick('prop5')}>Item 5</Button>
         <p> {dataForButtons[contentFromButton]}</p>
         </section>
         </main>

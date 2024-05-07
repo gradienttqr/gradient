@@ -20,25 +20,10 @@ export const dataForList = [
         description:'Одним из главных игроков на киберспортивном рынке Европы является киберспортивная организация ESL, в соревнованиях которой ежегодно разыгрываются несколько миллионов долларов.'
     }
 ];
-export const dataForButtons = [
-    {
-        prop:'prop1',
-        text:'Content from prop1'
-    },
-    {
-        prop:'prop2',
-        text:'Content from prop2'
-    },
-    {
-        prop:'prop3',
-        text:'Content from prop3'
-    },
-    {
-        prop:'prop4',
-        text:'Content from prop4'
-    },
-    {
-        prop:'prop5',
-        text:'Content from prop5'
-    },
-]
+export const dataForButtons = {
+        prop1:'Content from prop1',
+        prop2:'Content from prop2',
+        prop3:'Content from prop3',
+        prop4:'Content from prop4',
+        prop5:'Content from prop5',
+}
