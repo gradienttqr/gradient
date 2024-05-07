@@ -11,9 +11,7 @@ export default () => {
         <img src={logo} alt='logo'></img>
         <nav>
           <ul>
-            <li> <a href='#'>Item 1 </a></li>
-            <li> <a href='#'>Item 2 </a></li>
-            <li> <a href='#'>Item 3 </a></li>
+            <li> <a href='#'> </a></li>
           </ul>
         </nav>
         <span> Time now: {(new Date()).toLocaleTimeString()}</span>

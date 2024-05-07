@@ -19,4 +19,26 @@ export const dataForList = [
         title:'Западная Европа',
         description:'Одним из главных игроков на киберспортивном рынке Европы является киберспортивная организация ESL, в соревнованиях которой ежегодно разыгрываются несколько миллионов долларов.'
     }
+];
+export const dataForButtons = [
+    {
+        prop:'prop1',
+        text:'Content from prop1'
+    },
+    {
+        prop:'prop2',
+        text:'Content from prop2'
+    },
+    {
+        prop:'prop3',
+        text:'Content from prop3'
+    },
+    {
+        prop:'prop4',
+        text:'Content from prop4'
+    },
+    {
+        prop:'prop5',
+        text:'Content from prop5'
+    },
 ]
