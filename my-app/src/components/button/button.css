@@ -6,6 +6,9 @@
     transition: all 0.5s;
     font-weight: bold;
     margin-right: 30 px;
+    color: rgb(0, 0, 0);
+    background-color: orange;
+    
 }
 
 .button:hover {
