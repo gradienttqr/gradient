@@ -7,14 +7,19 @@ export default () => {
  
  
   return (
-  <header>
-        <img src={logo} alt='logo'></img>
-        <nav>
-          <ul>
-            <li> <a href='#'> </a></li>
-          </ul>
-        </nav>
-        <span> Time now: {(new Date()).toLocaleTimeString()}</span>
-        </header>
-  )
-}
+    <div className='App'>
+      <div className="white-strip"></div>
+    <header>
+          <img src={logo} alt='logo'></img>
+          <nav>
+            <ul>
+              <li> <a href='#'>Modelle</a></li>
+              <li> <a href='#'>Elrr</a></li>
+              <li> <a href='#'>Wawr</a></li>
+            </ul>
+          </nav>
+          <span> Time now: {(now).toLocaleTimeString()}</span>
+          </header>
+        </div>
+    )
+  }

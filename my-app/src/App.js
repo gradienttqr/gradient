@@ -6,6 +6,7 @@ import { dataForList, dataForButtons } from './content/mainData.js';
 import Button from  './components/button/button.js';
 import './components/header/main/main.css';
 import { useState } from 'react';
+import myImage from './Fon1.jpg';
 function App() {
   const [contentFromButton, setNewContent] = useState('About us');
 
@@ -16,6 +17,9 @@ function App() {
   } 
   return (
     <div className="App">
+      <div className='img-container'>
+        <img src={myImage} className='img-custom' alt='Fon1' />
+      </div>
      <Header/>
      <main> 
       <section>
@@ -27,9 +31,6 @@ function App() {
       </section>
      <section>
      <body> 
-     <img>
-        src="https://w.forfun.com/fetch/54/544be23a1118c704f56e34448b51488d.jpeg" alt=""  //Почему ?
-      </img>
     </body>
         <h1> All buttons </h1>
         <Button onClick={() => handleClick('prop1')}>Item 1</Button>

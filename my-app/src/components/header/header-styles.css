@@ -27,3 +27,50 @@ li > a {
     color: rgb(55, 0, 255);
 
 }
+
+.white-strip {
+    background-color: white;
+    position: fixed;
+    height: 3px;
+    width: 100%;
+    margin-top: 90px;
+}
+
+
+/* Стили для вашего списка */
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: -90px;
+    padding: 0; /* Обнулите внутренний отступ если он есть */
+}
+
+/* Стили для ссылок внутри списка и для эффекта наведения */
+li > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    margin-right: 25px;
+    padding: 10px; /* Вы можете отрегулировать отступ для лучшей видимости полоски */
+    position: relative; /* Для позиционирования анимированной полоски */
+}
+
+/* Невидимая полоска под каждой ссылкой */
+li > a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px; /* Высота анимированной полоски */
+    background-color: #fff; /* Цвет полоски */
+    transform: scaleX(0); /* Начальное масштабирование полоски */
+    transition: transform 0.3s ease-in-out; /* Эффект анимации для полоски */
+}
+
+/* Стили для анимированной полоски при наведении */
+li > a:hover::after,
+li > a:focus::after { /* Добавлено для доступности */
+    transform: scaleX(1); /* Полное масштабирование полоски */
+}
