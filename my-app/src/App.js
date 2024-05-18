@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-//import './App.css';
+import './App.css';
 import Header from './components/header/header.js';
 import MainList from './components/header/main/main.js';
 import { dataForList, dataForButtons } from './content/mainData.js';
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <div className='img-container'>
-        <img src={myImage} className='img-custom' alt='Fon1' />
+      <img src={myImage} className='img-custom' alt='Fon1' />
       </div>
      <Header/>
      <main> 
@@ -33,11 +33,10 @@ function App() {
      <body> 
     </body>
         <h1> All buttons </h1>
-        <Button onClick={() => handleClick('prop1')}>Item 1</Button>
-        <Button onClick={() => handleClick('prop2')}>Item 2</Button>
-        <Button onClick={() => handleClick('prop3')}>Item 3</Button>
-        <Button onClick={() => handleClick('prop4')}>Item 4</Button>
-        <Button onClick={() => handleClick('prop5')}>Item 5</Button>
+        <Button onClick={() => handleClick('prop1')}>О нас</Button>
+        <Button onClick={() => handleClick('prop2')}>Услуги</Button>
+        <Button onClick={() => handleClick('prop3')}>Личный кабинет</Button>
+        <Button onClick={() => handleClick('prop4')}>Контакты</Button>
         <p> {dataForButtons[contentFromButton]}</p>
         </section>
         </main>

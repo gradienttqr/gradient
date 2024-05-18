@@ -1,5 +1,5 @@
 import './header-styles.css'
-import logo from'../../logo.svg'
+import logo from'../../logo1.png'
 import {useState} from 'react';
 export default () => {
     const [now, setNow] = useState(new Date());
@@ -10,12 +10,12 @@ export default () => {
     <div className='App'>
       <div className="white-strip"></div>
     <header>
-          <img src={logo} alt='logo'></img>
+          <img src={logo} alt='logo1.png'></img>
+          
           <nav>
             <ul>
-              <li> <a href='#'>Modelle</a></li>
-              <li> <a href='#'>Elrr</a></li>
-              <li> <a href='#'>Wawr</a></li>
+              <li> <a href='#'>gradient studio</a></li>
+              
             </ul>
           </nav>
           <span> Time now: {(now).toLocaleTimeString()}</span>

@@ -1,6 +1,6 @@
 .img-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 .App-header{
   margin-bottom: 20px;
@@ -12,6 +12,6 @@
   position: relative;
   left: auto;
   bottom: 150px;
-  height: 627px;
-  width: 966px;
+  height: 527px;
+  width: 766px;
 }
